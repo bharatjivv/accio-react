@@ -12,7 +12,7 @@ const App = () => {
       
       {
         isLoggedIn? (
-          <p>Welcome User</p>
+          <p>Welcome User!</p>
         ):
         (
           <LoginForm setIsLoggedIn = {setIsLoggedIn}/>

@@ -1,0 +1,8 @@
+
+.parent {
+    border: 1px solid red;
+}
+
+.child {
+    border: 2px solid black;
+}

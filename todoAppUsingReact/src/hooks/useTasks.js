@@ -14,19 +14,19 @@ export const useTasks = () => {
         setTasks(prevTasks => [...prevTasks, newTask]);
     }
 
-    const toggleComplete = (id) => {
-        setTasks(prevTasks =>
-            prevTasks.map(task => task.id === id ? {...task, completed: !task.completed} : task)
-        )
-    }
-
     const deleteTask = (id) => {
         setTasks(prevTasks => 
             prevTasks.filter(task => task.id !== id)
         )
     }
 
+    const toggleComplete = (id) => {
+        setTasks(prevTasks =>
+            prevTasks.map(task => task.id === id ? {...task, completed: !task.completed} : task)
+        )
+    }
 
+    
     return { tasks, addTask, toggleComplete, deleteTask };
 }
 
